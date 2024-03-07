@@ -3,7 +3,7 @@ import { fetchDogs } from "../actions";
 
 const MAX_DOGS = 50;
 
-export const AllDogsPage = async () => {
+const AllDogsPage = async () => {
   const dogs = await fetchDogs(MAX_DOGS);
 
   return (
